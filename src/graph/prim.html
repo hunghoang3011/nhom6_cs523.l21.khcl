@@ -1,41 +1,43 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<script src="../jquery.js"></script>
 	<script src="../index.js"></script>
-	<script type = "application/javascript" src = "../js/AnimationManager.js"> </script>
-    <script type = "application/javascript" src = "../js/ObjectManager.js"> </script>
-    <script type = "application/javascript" src = "../js/AnimatedObject.js"> </script>
-    <script type = "application/javascript" src = "../js/AnimatedCircle.js"> </script>
-	<script type = "application/javascript" src = "../js/AnimatedHighlightCircle.js"> </script>
-    <script type = "application/javascript" src = "../js/AnimatedLine.js"> </script>
-    <script type = "application/javascript" src = "../js/AnimatedLabel.js"> </script>
-    <script type = "application/javascript" src = "../js/AnimatedRectangle.js"> </script>
-    <script type = "application/javascript" src = "../js/AnimatedPointer.js"> </script>
-	<script type = "application/javascript" src = "../js/AnimatedHighlightRectangle.js"> </script>
-    <script type = "application/javascript" src = "../js/Algorithm.js"> </script>
-    <script type = "application/javascript" src = "../js/Prim.js"> </script>
+	<script type="application/javascript" src="../js/AnimationManager.js"> </script>
+	<script type="application/javascript" src="../js/ObjectManager.js"> </script>
+	<script type="application/javascript" src="../js/AnimatedObject.js"> </script>
+	<script type="application/javascript" src="../js/AnimatedCircle.js"> </script>
+	<script type="application/javascript" src="../js/AnimatedHighlightCircle.js"> </script>
+	<script type="application/javascript" src="../js/AnimatedLine.js"> </script>
+	<script type="application/javascript" src="../js/AnimatedLabel.js"> </script>
+	<script type="application/javascript" src="../js/AnimatedRectangle.js"> </script>
+	<script type="application/javascript" src="../js/AnimatedPointer.js"> </script>
+	<script type="application/javascript" src="../js/AnimatedHighlightRectangle.js"> </script>
+	<script type="application/javascript" src="../js/Algorithm.js"> </script>
+	<script type="application/javascript" src="../js/Prim.js"> </script>
 	<link rel="shortcut icon" href="../favicon.ico" />
 	<link rel="stylesheet" href="../css/index.css" />
-	<link rel="stylesheet" type="text/css" href="../css/graph.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/graph.css" />
 	<title>Prim</title>
 	<script>
-          var type=0;
-          var index;
+		var type = 0;
+		var index;
 	</script>
 </head>
+
 <body onload="init();ini();">
 	<div class="mainSub">
 		<div class="header">
 			<img class="logo" src="../image/logo.png" alt="logo" onclick="window.location.href='../index.html'" />
 			<div class="navList">
-			        <a href="prim.html" class="nav selected" style="text-decoration:none;">Prim</a>
-			        <a href="kruskal.html" class="nav" style="text-decoration:none;">Kruskal</a>
+				<a href="prim.html" class="nav selected" style="text-decoration:none;">Prim</a>
+				<a href="kruskal.html" class="nav" style="text-decoration:none;">Kruskal</a>
 			</div>
 		</div>
 		<div class="showBox" width="1000" height="500" style="overflow: scroll;">
-		   <canvas id="drawing" width="2000" height="1000">Canvas</canvas>
+			<canvas id="drawing" width="2000" height="1000">Canvas</canvas>
 		</div>
 		<div class="primStartHide">
 			<img src="../image/arrow_white_right.png" alt="" />
@@ -47,32 +49,32 @@
 		</div>
 		<div class="peakPrimNum subX1">
 			<span>Number of vertices</span>
-			<input type="text" class="peakPrimNumber"/>
+			<input type="text" class="peakPrimNumber" />
 		</div>
 		<div class="createPrimGraph subX1">
 			<p>Generate</p>
 		</div>
-		<div class="startPrimPeak subX2"> 
+		<div class="startPrimPeak subX2">
 			<span>Starting</span>
-			<input type="text" class="startPrimNumber"/>
+			<input type="text" class="startPrimNumber" />
 		</div>
 		<div class="endPrimPeak subX2">
 			<span>End</span>
-			<input type="text" class="endPrimNumber"/>
+			<input type="text" class="endPrimNumber" />
 		</div>
 		<div class="weightPrim subX2">
 			<span>Weights</span>
-			<input type="text" class="weightPrimNumber"/>
+			<input type="text" class="weightPrimNumber" />
 		</div>
 		<div class="addPrimEdge subX2">
 			<p>Add edge</p>
 		</div>
-        <div class="deletePrimEdge subX2">
+		<div class="deletePrimEdge subX2">
 			<p>Delete edge</p>
 		</div>
 		<div class="runPrimPeak subX3">
 			<span>Starting vertex</span>
-			<input type="text" class="runPrimNumber"/>
+			<input type="text" class="runPrimNumber" />
 		</div>
 		<div class="runTraverse subX3 Prim">
 			<p>Run Prim</p>
@@ -94,10 +96,14 @@
 			<p>xx</p>
 			<p>xx</p>
 	    </div-->
-	    <div class="controlBar">
-	    	<input type="range" name="controlSlider" id="controlSlider"  min="1" max="100" value="60" onchange="setAnimationSpeed(this.value);" />
-	    </div>
+		<div class="controlBar">
+			<input type="range" name="controlSlider" id="controlSlider" min="1" max="100" value="60" onchange="setAnimationSpeed(this.value);" />
+		</div>
 	</div>
-	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256898616'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256898616' type='text/javascript'%3E%3C/script%3E"));</script>
+	<script type="text/javascript">
+		var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cspan id='cnzz_stat_icon_1256898616'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256898616' type='text/javascript'%3E%3C/script%3E"));
+	</script>
 </body>
+
 </html>
