@@ -188,7 +188,7 @@
 	background:        rgb(89, 229, 89);
 	position:          fixed;
 	left:              0px;
-	top:               495px;
+	top:               70%;
 	cursor:            pointer;
 }
 .primStartHide img{
@@ -197,7 +197,7 @@
 }
 .primStarts{
 	position:          fixed;
-	top:               495px;
+	top:               70%;
 	left:              46px;
 	width:             0px;
 	height:            105px;
@@ -217,7 +217,7 @@
 }
 .peakPrimNum{
 	position:          fixed;
-	top:               495px;
+	top:               70%;
 	left:              190px;
 	width:             200px;
 	height:            35px;
@@ -238,7 +238,7 @@
 .createPrimGraph{
 	position:          fixed;
 	left:              394px;
-	top:               495px;
+	top:               70%;
 	width:             100px;
 	height:            35px;
 	background:        rgb(89,229,89);
@@ -247,13 +247,13 @@
 }
 .startPrimPeak{
 	position:          fixed;
-	top:               530px;
+	top: 75%;
 	left:              190px;
 	width:             150px;
 	height:            35px;
 	background:        rgb(89, 229, 89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .startPrimPeak span,.endPrimPeak span,.weightPrim span{
 	font-size:         1em;
@@ -266,33 +266,33 @@
 }
 .endPrimPeak{
 	position:          fixed;
-	top:               530px;
+	top: 75%;
 	left:              344px;
 	width:             150px;
 	height:            35px;
 	background:        rgb(89, 229, 89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .weightPrim{
 	position:          fixed;
-	top:               530px;
+	top: 75%;
 	left:              498px;
 	width:             150px;
 	height:            35px;
 	background:        rgb(89, 229, 89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .addPrimEdge{
 	position:          fixed;
 	left:              652px;
-	top:               530px;
+	top: 75%;
 	width:             80px;
 	height:            35px;
 	background:        rgb(89,229,89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .addPrimEdge p,.deletePrimEdge p,.createPrimGraph p,.runTraverse p{
 	width:             100%;
@@ -304,16 +304,16 @@
 .deletePrimEdge{
 	position:          fixed;
 	left:              736px;
-	top:               530px;
+	top: 75%;
 	width:             80px;
 	height:            35px;
 	background:        rgb(89,229,89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .runPrimPeak{
 	position:          fixed;
-	top:               565px;
+	top: 78%;
 	left:              190px;
 	width:             200px;
 	height:            35px;
@@ -333,7 +333,7 @@
 .Prim{
 	position:          fixed;
 	left:              394px;
-	top:               565px;
+	top: 78%;
 	width:             80px;
 	height:            35px;
 	background:        rgb(89,229,89);
@@ -346,7 +346,7 @@
 	background:        rgb(89, 229, 89);
 	position:          fixed;
 	left:              0px;
-	top:               495px;
+	top: 70%;
 	cursor:            pointer;
 }
 .kruStartHide img{
@@ -355,12 +355,12 @@
 }
 .kruStarts{
 	position:          fixed;
-	top:               495px;
+	top: 70%;
 	left:              46px;
 	width:             0px;
 	height:            105px;
 	background:        rgb(89, 229, 89);
-	cursor:            pointer; 
+	cursor:            pointer;
 	display:           none;
 }
 .kruStarts p{
@@ -375,13 +375,13 @@
 }
 .peakKruNum{
 	position:          fixed;
-	top:               495px;
+	top: 70%;
 	left:              190px;
 	width:             200px;
 	height:            35px;
 	background:        rgb(89, 229, 89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .peakKruNum span{
 	font-size:         1em;
@@ -396,22 +396,22 @@
 .createKruGraph{
 	position:          fixed;
 	left:              394px;
-	top:               495px;
+	top: 70%;
 	width:             100px;
 	height:            35px;
 	background:        rgb(89,229,89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .startKruPeak{
 	position:          fixed;
-	top:               530px;
+	top: 75%;
 	left:              190px;
 	width:             150px;
 	height:            35px;
 	background:        rgb(89, 229, 89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .startKruPeak span,.endKruPeak span,.weightKru span{
 	font-size:         1em;
@@ -424,33 +424,33 @@
 }
 .endKruPeak{
 	position:          fixed;
-	top:               530px;
+	top: 75%;
 	left:              344px;
 	width:             150px;
 	height:            35px;
 	background:        rgb(89, 229, 89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .weightKru{
 	position:          fixed;
-	top:               530px;
-	left:              498px;
+	top: 75%;
+	left: 499px;
 	width:             150px;
 	height:            35px;
 	background:        rgb(89, 229, 89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .addKruEdge{
 	position:          fixed;
 	left:              652px;
-	top:               530px;
+	top: 75%;
 	width:             80px;
 	height:            35px;
 	background:        rgb(89,229,89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .addKruEdge p,.deleteKruEdge p,.createKruGraph p,.runTraverse p{
 	width:             100%;
@@ -461,13 +461,13 @@
 }
 .deleteKruEdge{
 	position:          fixed;
-	left:              736px;
-	top:               530px;
+	left: 736px;
+	top: 75%;
 	width:             80px;
 	height:            35px;
 	background:        rgb(89,229,89);
 	display:           none;
-	cursor:            pointer; 
+	cursor:            pointer;
 }
 .runKruPeak{
 	position:          fixed;
@@ -491,7 +491,7 @@
 .Kruskal{
 	position:          fixed;
 	left:              190px;
-	top:               565px;
+	top: 80%;
 	width:             150px;
 	height:            35px;
 	background:        rgb(89,229,89);
